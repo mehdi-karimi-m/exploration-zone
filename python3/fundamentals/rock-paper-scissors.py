@@ -1,7 +1,7 @@
 import random
 
 computer_choice = random.choice(["paper", "rock", "scissors"])
-user_choice = input("What do you play?\n")
+user_choice = input("What do you play? (paper/rock/scissors)\n")
 
 print("Computer choice:", computer_choice)
 
