@@ -20,3 +20,16 @@ try:
     print(another_saving_account.some_prop)
 except AttributeError as error:
     print("Cannot use method that define dynamically for antoher instance of a class.", error)
+
+
+someSavingAccount = SavingAccount.open()
+anotherSavingAccount = SavingAccount.open()
+print(someSavingAccount == anotherSavingAccount)
+
+someSavingAccount.deposit(10000)
+print(someSavingAccount > anotherSavingAccount)
+print(someSavingAccount < anotherSavingAccount)
+
+anotherSavingAccount.deposit(40000)
+
+print(someSavingAccount + anotherSavingAccount)

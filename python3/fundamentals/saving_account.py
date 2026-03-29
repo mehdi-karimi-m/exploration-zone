@@ -7,6 +7,9 @@ class SavingAccount:
 
     def __str__(self):
         return f"Balance: {self.balance}"
+    
+    def __eq__(self, other):
+        return self.balance == other.balance
 
     @classmethod
     def open(cls):
@@ -26,3 +29,9 @@ class SavingAccount:
 
     def montly_interest(self):
         return self.balance * SavingAccount.default_interest_rate
+    
+    def __gt__(self, other):
+        return self.balance > other.balance
+    
+    def __add__(self, other):
+        return self.balance + other.balance
