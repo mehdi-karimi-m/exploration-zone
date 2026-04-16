@@ -1,5 +1,5 @@
 import json
-import datetime
+from datetime import datetime
 
 jsonPerson = '{ "firstName": "Mehdi", "lastName": "Karimi", "birthday": "1982-11-28" }'
 
@@ -12,7 +12,7 @@ order = {
     "instrumentId": "IROLAB123456",
     "quantity": 1500,
     "price": 2650,
-    "entryDate": str(datetime.datetime.now())
+    "entryDate": str(datetime.now())
 }
 jsonOrder = json.dumps(order, indent= 4)
 

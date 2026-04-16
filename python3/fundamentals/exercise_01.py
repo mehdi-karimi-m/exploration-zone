@@ -1,5 +1,4 @@
 from pprint import pprint
-from timeit import timeit
 #return the most repeted character.
 
 user_input = input("Enter something: ")
